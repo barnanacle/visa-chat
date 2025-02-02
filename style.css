@@ -1,0 +1,203 @@
+:root {
+    --send-bg: #0B93F6;
+    --send-color: white;
+    --receive-bg: #E5E5EA;
+    --receive-text: black;
+    --page-background: white;
+  }
+  
+  body {
+      font-family: "Helvetica Neue", Helvetica, sans-serif;
+      font-size: 20px;
+      font-weight: normal;
+      max-width: 450px;
+      margin: 50px auto;
+      display: flex;
+      flex-direction: column;
+      background-color: var(--page-background);
+  }
+  
+  #chat-container {
+      width: 100%;
+      max-width: 450px;
+      background: var(--page-background);
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      height: 600px; /* 고정된 높이 설정 */
+  }
+  
+  #chat-box {
+      flex: 1;
+      padding: 20px;
+      overflow-y: auto;
+  }
+  
+  p {
+      max-width: 255px;
+      word-wrap: break-word;
+      margin-bottom: 12px;
+      line-height: 24px;
+      position: relative;
+      padding: 10px 20px;
+      border-radius: 25px;
+  }
+  
+  p:before, p:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      height: 25px;
+  }
+  
+  .send {
+      color: var(--send-color);
+      background: var(--send-bg);
+      align-self: flex-end;
+      margin-left: auto;
+  }
+  
+  .send:before {
+      right: -7px;
+      width: 20px;
+      background-color: var(--send-bg);
+      border-bottom-left-radius: 16px 14px;
+  }
+  
+  .send:after {
+      right: -26px;
+      width: 26px;
+      background-color: var(--page-background);
+      border-bottom-left-radius: 10px;
+  }
+  
+  .receive {
+      background: var(--receive-bg);
+      color: black;
+      align-self: flex-start;
+      margin-right: auto;
+  }
+  
+  .receive:before {
+      left: -7px;
+      width: 20px;
+      background-color: var(--receive-bg);
+      border-bottom-right-radius: 16px 14px;
+  }
+  
+  .receive:after {
+      left: -26px;
+      width: 26px;
+      background-color: var(--page-background);
+      border-bottom-right-radius: 10px;
+  }
+  
+  #input-container {
+      display: flex;
+      border-top: 1px solid #ddd;
+  }
+  
+  #user-input {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      outline: none;
+  }
+  
+  #send-button {
+      padding: 10px 20px;
+      background: #ffcc80;
+      color: white;
+      border: none;
+      cursor: pointer;
+  }
+  
+  #send-button:hover {
+      background: #ffa726;
+  }
+
+  #loading-indicator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    border: 10px solid #ccc;
+    border-radius: 50%;
+    border-top: 10px solid #fff;
+    animation: spin 1s linear infinite;
+    display: none; /* 기본적으로 숨겨짐 */
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* 로딩 애니매이션 */
+  @keyframes typing {
+    0% { opacity: 0.2; }
+    20% { opacity: 1; }
+    100% { opacity: 0.2; }
+}
+
+.typing-indicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+}
+
+.typing-indicator div {
+    background-color: #ccc;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    margin: 0 2px;
+    animation: typing 1.5s infinite ease-in-out;
+}
+
+.typing-indicator div:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.typing-indicator div:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.typing-indicator div:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+#user-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    resize: none; /* 사용자가 수동으로 크기 조절하는 것 방지 */
+    min-height: 24px; /* 최소 높이 설정 */
+    max-height: 150px; /* 최대 높이 설정 */
+    font-family: inherit; /* 폰트 통일 */
+    font-size: inherit; /* 폰트 크기 통일 */
+    line-height: 1.4; /* 줄 간격 설정 */
+    overflow-y: auto; /* 세로 스크롤 자동 */
+    margin: 5px; /* 여백 추가 */
+}
+
+#input-container {
+    display: flex;
+    align-items: flex-end; /* 전송 버튼을 아래쪽으로 정렬 */
+    border-top: 1px solid #ddd;
+    padding: 5px;
+    background: white;
+}
+
+/* 로딩애니매이션 끝 */
+  
