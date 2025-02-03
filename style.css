@@ -4,36 +4,39 @@
     --receive-bg: #E5E5EA;
     --receive-text: black;
     --page-background: white;
-  }
+}
   
-  body {
-      font-family: "Helvetica Neue", Helvetica, sans-serif;
-      font-size: 20px;
-      font-weight: normal;
-      max-width: 450px;
-      margin: 50px auto;
-      display: flex;
-      flex-direction: column;
-      background-color: var(--page-background);
-  }
+body {
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    max-width: 450px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--page-background);
+    height: 100vh; /* 뷰포트 높이를 100%로 설정 */
+    padding: 0; /* 패딩 제거 */
+}
   
-  #chat-container {
-      width: 100%;
-      max-width: 450px;
-      background: var(--page-background);
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      height: 600px; /* 고정된 높이 설정 */
-  }
+#chat-container {
+    width: 100%;
+    max-width: 450px;
+    background: var(--page-background);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* 컨테이너 높이를 100%로 설정 */
+}
   
-  #chat-box {
-      flex: 1;
-      padding: 20px;
-      overflow-y: auto;
-  }
+#chat-box {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch; /* iOS 스크롤 개선 */
+}
   
   p {
       max-width: 255px;
