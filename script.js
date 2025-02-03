@@ -38,7 +38,7 @@ async function sendMessage() {
     scrollToBottom();
 
     try {
-        const response = await fetch("http://localhost:3000/chat", {
+        const response = await fetch("https://rr7yx755i2.execute-api.ap-northeast-2.amazonaws.com/default/visa-chat-lambda", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
