@@ -124,15 +124,15 @@ async function sendMessage() {
     scrollToBottom();
 
     try {
-        const response = await fetch("http://localhost:3000/chat", {
+        const response = await fetch("https://rr7yx755i2.execute-api.ap-northeast-2.amazonaws.com/default/chat", {
             method: "POST",
             headers: {
-                "Content-Type": "application/json",
+              "Content-Type": "application/json",
             },
             body: JSON.stringify({
-                question: message
+              question: message
             }),
-        });
+          });
 
         if (!response.ok) {
             throw new Error('Request Failed with status ' + response.status);
