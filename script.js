@@ -17,6 +17,7 @@ function adjustTextareaHeight(textarea) {
     textarea.style.height = (textarea.scrollHeight) + 'px'; // 내용에 맞게 높이 조절
 }
 
+// 메시지 전송 및 응답 처리
 async function sendMessage() {
     const userInputElement = document.getElementById('user-input');
     const message = userInputElement.value.trim();
@@ -38,7 +39,7 @@ async function sendMessage() {
     scrollToBottom();
 
     try {
-        const response = await fetch("https://rr7yx755i2.execute-api.ap-northeast-2.amazonaws.com/default/chat", {
+        const response = await fetch("https://rr7yx755i2.execute-api.ap-northeast-2.amazonaws.com/prod/chat", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -46,6 +47,7 @@ async function sendMessage() {
             body: JSON.stringify({
                 question: message
             }),
+            credentials: 'include'
         });
 
         if (!response.ok) {
@@ -67,6 +69,7 @@ async function sendMessage() {
     }
 }
 
+// 메시지 추가 및 표시
 function appendMessage(message, className) {
     const chatBox = document.getElementById('chat-box');
     const messageElement = document.createElement('p');
@@ -80,6 +83,7 @@ function appendMessage(message, className) {
     return messageElement;
 }
 
+// 스크롤 처리
 function scrollToBottom() {
     const chatBox = document.getElementById('chat-box');
     chatBox.scrollTop = chatBox.scrollHeight;
@@ -105,72 +109,3 @@ window.onload = function() {
         scrollToBottom();
     }, 1000);
 };
-
-async function sendMessage() {
-    const userInputElement = document.getElementById('user-input');
-    const message = userInputElement.value;
-    if (!message) return;
-
-    appendMessage(message, 'send');
-    userMessages.push(message);
-    userInputElement.value = '';
-
-    const loadingMessageElement = appendMessage('', 'receive');
-    const loadingIndicator = document.createElement('div');
-    loadingIndicator.className = 'typing-indicator';
-    loadingIndicator.innerHTML = '<div></div><div></div><div></div>';
-    loadingMessageElement.appendChild(loadingIndicator);
-
-    scrollToBottom();
-
-    try {
-        const response = await fetch("https://rr7yx755i2.execute-api.ap-northeast-2.amazonaws.com/default/chat", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-                question: message
-            }),
-        });
-
-        if (!response.ok) {
-            throw new Error('Request Failed with status ' + response.status);
-        }
-
-        const data = await response.json();
-        
-        // 여기를 수정: textContent 대신 innerHTML 사용
-        let formattedAnswer = data.answer.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
-        loadingMessageElement.innerHTML = formattedAnswer;
-        
-        assistantMessages.push(data.answer);
-        scrollToBottom();
-
-    } catch (error) {
-        console.error("Error:", error);
-        loadingMessageElement.innerHTML = '죄송합니다. 서버 연결에 문제가 발생했습니다.';
-        scrollToBottom();
-    }
-}
-
-// appendMessage 함수 수정
-function appendMessage(message, className) {
-    const chatBox = document.getElementById('chat-box');
-    const messageElement = document.createElement('p');
-    messageElement.className = className;
-    
-    // 마크다운 처리
-    let formattedMessage = message;
-    formattedMessage = formattedMessage.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
-    
-    // HTML 적용
-    messageElement.innerHTML = formattedMessage;
-    chatBox.appendChild(messageElement);
-    return messageElement;
-}
-
-function scrollToBottom() {
-    const chatBox = document.getElementById('chat-box');
-    chatBox.scrollTop = chatBox.scrollHeight;
-}
