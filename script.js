@@ -39,7 +39,7 @@ async function sendMessage() {
     scrollToBottom();
 
     try {
-        const response = await fetch("https://rr7yx755i2.execute-api.ap-northeast-2.amazonaws.com/prod/chat", {
+        const response = await fetch("https://rr7yx755i2.execute-api.ap-northeast-2.amazonaws.com/prod", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
