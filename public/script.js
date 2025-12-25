@@ -52,8 +52,8 @@ function parseMarkdown(text) {
     // 번호 매기기 (1. 2. 3. 등) - 줄 시작에서
     html = html.replace(/(^|\<br\>)(\d+)\.\s+/g, '$1<span class="list-number">$2.</span> ');
 
-    // 글머리 기호 (- 또는 •) - 줄 시작에서
-    html = html.replace(/(^|\<br\>)-\s+/g, '$1<span class="list-bullet">•</span> ');
+    // 글머리 기호 (- 로 시작하는 줄) - "-"를 "•"로 완전 교체
+    html = html.replace(/(^|<br>)-\s*/g, '$1<span class="list-bullet">•</span> ');
 
     // 제목 스타일 (### 또는 ##) - 간단한 강조로 변환
     html = html.replace(/(^|\<br\>)#{1,3}\s+(.+?)(\<br\>|$)/g, '$1<strong class="heading">$2</strong>$3');
