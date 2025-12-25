@@ -61,6 +61,13 @@ body {
     max-width: none;
 }
 
+#chat-header p.languages {
+    font-size: 0.65em;
+    opacity: 0.75;
+    margin-top: 8px;
+    letter-spacing: 0.5px;
+}
+
 /* 채팅 박스 - 남은 공간 채우기, 내부 스크롤 */
 #chat-box {
     flex: 1;
