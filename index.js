@@ -422,13 +422,85 @@ async function initializeChroma() {
             path: "http://127.0.0.1:8000"
         });
 
+        // 먼저 vectordb_data.json 파일 확인
+        const vectorDbPath = path.join(__dirname, 'vectordb_data.json');
+        let vectorData = null;
+
         try {
-            console.log('Attempting to get existing collection...');
-            collection = await client.getCollection({ name: "visa_info", embeddingFunction });
-            console.log('Successfully retrieved existing ChromaDB collection');
+            const fileContent = await fs.readFile(vectorDbPath, 'utf8');
+            vectorData = JSON.parse(fileContent);
+            console.log(`Loaded ${vectorData.totalChunks} chunks from vectordb_data.json`);
         } catch (error) {
-            console.log('Collection not found, creating new one...');
-            await updateVectorDB();
+            console.warn('vectordb_data.json not found, falling back to legacy mode');
+        }
+
+        // 기존 컬렉션 확인
+        let collectionExists = false;
+        try {
+            const collections = await client.listCollections();
+            collectionExists = collections.includes("visa_info");
+        } catch (error) {
+            console.warn('Could not list collections:', error.message);
+        }
+
+        // vectordb_data.json이 있으면 새로 로드
+        if (vectorData && vectorData.documents && vectorData.documents.length > 0) {
+            console.log('Loading pre-computed embeddings from vectordb_data.json...');
+
+            // 기존 컬렉션 삭제
+            if (collectionExists) {
+                try {
+                    await client.deleteCollection({ name: "visa_info" });
+                    console.log('Deleted existing collection');
+                    await new Promise(resolve => setTimeout(resolve, 500));
+                } catch (error) {
+                    console.warn('Could not delete existing collection:', error.message);
+                }
+            }
+
+            // 커스텀 임베딩 함수 - 이미 계산된 임베딩 사용
+            const precomputedEmbeddings = new Map();
+            vectorData.documents.forEach(doc => {
+                precomputedEmbeddings.set(doc.id, doc.embedding);
+            });
+
+            // 새 컬렉션 생성 (임베딩 없이)
+            collection = await client.createCollection({
+                name: "visa_info"
+            });
+            console.log('Created new collection');
+
+            // 문서와 임베딩 추가
+            const batchSize = 50;
+            for (let i = 0; i < vectorData.documents.length; i += batchSize) {
+                const batch = vectorData.documents.slice(i, i + batchSize);
+                console.log(`Adding batch ${Math.floor(i / batchSize) + 1}/${Math.ceil(vectorData.documents.length / batchSize)}`);
+
+                await collection.add({
+                    ids: batch.map(d => d.id),
+                    documents: batch.map(d => d.content),
+                    metadatas: batch.map(d => d.metadata),
+                    embeddings: batch.map(d => d.embedding)
+                });
+            }
+
+            console.log(`Successfully loaded ${vectorData.documents.length} documents with embeddings`);
+        } else {
+            // 레거시 모드: 기존 컬렉션 사용
+            if (collectionExists) {
+                console.log('Using existing ChromaDB collection (legacy mode)');
+                collection = await client.getCollection({
+                    name: "visa_info",
+                    embeddingFunction
+                });
+            } else {
+                console.warn('No vectordb_data.json and no existing collection. RAG will not work properly.');
+                // 빈 컬렉션 생성
+                collection = await client.createCollection({
+                    name: "visa_info",
+                    embeddingFunction
+                });
+            }
         }
 
         return collection;

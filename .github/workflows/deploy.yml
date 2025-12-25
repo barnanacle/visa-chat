@@ -74,6 +74,10 @@ jobs:
           **/Thumbs.db
           **/backup/**
           **/VISACHAT_DEPLOYMENT_TEMPLATE.md
+          **/source_data/**
+          **/scripts/**
+          **/.pdf-hash
+          **/documents/**
           
     # 6. FTP 업로드 후 권한 수정
     - name: Fix permissions after FTP upload

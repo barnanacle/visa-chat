@@ -4,6 +4,9 @@
 .env.*.local
 .env.backup
 
+# Source PDFs (not deployed, only vector DB)
+source_data/
+
 # Dependencies
 node_modules/
 
