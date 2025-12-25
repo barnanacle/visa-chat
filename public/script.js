@@ -35,6 +35,10 @@ function parseMarkdown(text) {
         .replace(/</g, '&lt;')
         .replace(/>/g, '&gt;');
 
+    // 링크 처리 [텍스트](URL) - HTML 이스케이프 전에 처리해야 함
+    // URL에서 이스케이프된 문자 복원
+    html = html.replace(/\[([^\]]+)\]\((https?:\/\/[^\s\)]+)\)/g, '<a href="$2" target="_blank" class="form-link">$1</a>');
+
     // 줄바꿈 처리
     html = html.replace(/\n/g, '<br>');
 

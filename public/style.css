@@ -119,6 +119,18 @@ p em {
     font-style: italic;
 }
 
+/* 다운로드 링크 스타일 */
+p a.form-link {
+    color: #1a73e8;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+p a.form-link:hover {
+    color: #0d47a1;
+    text-decoration: underline;
+}
+
 p:before,
 p:after {
     content: "";

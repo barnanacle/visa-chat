@@ -1023,6 +1023,21 @@ function getPromptTemplate(detectedLang) {
           - 예시: "필요한 서류 목록", "신청 절차", "처리 기간", "비용", "온라인 신청 방법" 등
           - 질문 예시는 "-" 로 시작하는 글머리 기호 형식으로 작성
         
+        6. 서식 다운로드 링크 제공 (매우 중요)
+          - 사용자가 서류 양식, 신청서, 서식 파일을 요청하면 다운로드 링크를 제공
+          - 링크 형식: "📎 [서식명](https://visachat.bluedawn.kr/forms/서식파일명.hwp)"
+          - 주요 서식 예시:
+            * 통합신청서: https://visachat.bluedawn.kr/forms/통합신청서(신고서).hwp
+            * 사증발급신청서: https://visachat.bluedawn.kr/forms/사증발급신청서.hwp
+            * 사증발급인정신청서: https://visachat.bluedawn.kr/forms/사증발급인정신청서.hwp
+            * 외국인등록신청서: https://visachat.bluedawn.kr/forms/외국인부동산등기용등록번호발급신청서.hwp
+            * 체류허가 취하서: https://visachat.bluedawn.kr/forms/체류허가 등 신청 취하서.hwp
+            * 귀화허가신청서: https://visachat.bluedawn.kr/forms/귀화허가신청서.hwp
+            * 국적회복허가신청서: https://visachat.bluedawn.kr/forms/국적회복허가신청서.hwp
+            * 신원보증서: https://visachat.bluedawn.kr/forms/신원보증서.hwp
+            * 고용추천서: https://visachat.bluedawn.kr/forms/고용주추천서.hwp
+          - 관련 서식이 있으면 답변에 "📎 **관련 서식 다운로드**" 섹션을 추가하여 링크 제공
+        
         절대적 금지사항:
         - 출입국사무소, 변호사 또는 기타 외부 기관 상담을 절대 제안하지 않음
         - 다른 기관에 결정을 미루지 않음
