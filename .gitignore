@@ -1,0 +1,36 @@
+# Environment files
+.env
+.env.local
+.env.*.local
+.env.backup
+
+# Dependencies
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Backup
+backup/
+
+# Build/Runtime
+pids/
+*.pid
+*.seed
+
+# Test
+test-results/
+coverage/
+
+# ChromaDB (서버에서만 사용)
+chroma_db/

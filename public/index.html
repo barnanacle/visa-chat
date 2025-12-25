@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VisaChat - 대한민국 비자/체류 상담</title>
+    <meta name="description" content="대한민국 출입국 업무, 비자, 체류 관련 전문 상담 챗봇">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="chat-container">
+        <div id="chat-header">
+            <h1>🛂 VisaChat</h1>
+            <p>대한민국 비자/체류 상담</p>
+        </div>
+        <div id="chat-box"></div>
+        <div id="input-container">
+            <input type="text" id="user-input" placeholder="비자, 체류 관련 질문을 입력하세요..." onkeypress="checkEnter(event)">
+            <button id="send-button" onclick="sendMessage()">전송</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,5 @@
+ssh root@210.114.1.234
+
+cd /var/www/html/visachat
+
+코드 푸시: git push origin main

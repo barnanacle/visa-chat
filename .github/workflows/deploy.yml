@@ -1,0 +1,135 @@
+name: Deploy to Cafe24
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    # 1. 코드 체크아웃
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    # 2. Node.js 설정
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+        
+    # 3. 의존성 설치
+    - name: Install dependencies
+      run: npm install
+      
+    # 4. 서버 권한 준비 (FTP 업로드 전)
+    - name: Prepare server permissions
+      uses: appleboy/ssh-action@v1.0.3
+      with:
+        host: ${{ secrets.CAFE24_SSH_HOST }}
+        username: ${{ secrets.CAFE24_SSH_USERNAME }}
+        key: ${{ secrets.CAFE24_SSH_KEY }}
+        script: |
+          echo "🔧 서버 권한 준비 중..."
+          
+          # 디렉토리가 없으면 생성
+          mkdir -p /var/www/html/visachat
+          
+          # FTP 사용자를 www-data 그룹에 추가
+          usermod -a -G www-data ftpuser 2>/dev/null || true
+          
+          # 디렉토리 권한 설정
+          chown -R www-data:www-data /var/www/html/visachat
+          chmod -R 775 /var/www/html/visachat
+          
+          echo "✅ 서버 권한 설정 완료"
+        port: 22
+        timeout: 30s
+        command_timeout: 2m
+      
+    # 5. FTP로 파일 업로드
+    - name: Deploy to Cafe24 via FTP
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{ secrets.CAFE24_FTP_HOST }}
+        username: ${{ secrets.CAFE24_FTP_USERNAME }}
+        password: ${{ secrets.CAFE24_FTP_PASSWORD }}
+        server-dir: '/var/www/html/visachat/'
+        log-level: verbose
+        exclude: |
+          **/.git*
+          **/.git*/**
+          **/node_modules/**
+          **/.env
+          **/.env.*
+          **/README.md
+          **/.gitignore
+          **/.github/**
+          **/test-results/**
+          **/coverage/**
+          **/*.log
+          **/.DS_Store
+          **/Thumbs.db
+          **/backup/**
+          **/VISACHAT_DEPLOYMENT_TEMPLATE.md
+          
+    # 6. FTP 업로드 후 권한 수정
+    - name: Fix permissions after FTP upload
+      uses: appleboy/ssh-action@v1.0.3
+      with:
+        host: ${{ secrets.CAFE24_SSH_HOST }}
+        username: ${{ secrets.CAFE24_SSH_USERNAME }}
+        key: ${{ secrets.CAFE24_SSH_KEY }}
+        script: |
+          cd /var/www/html/visachat
+          echo "🔧 FTP 업로드 후 권한 수정 중..."
+          
+          chown -R www-data:www-data /var/www/html/visachat
+          chmod -R 775 /var/www/html/visachat
+          
+          echo "📁 업로드된 파일들:"
+          ls -la
+          
+          echo "✅ 권한 수정 완료"
+        port: 22
+        timeout: 30s
+        command_timeout: 2m
+          
+    # 7. 서버 재시작
+    - name: Restart Server after Deploy
+      uses: appleboy/ssh-action@v1.0.3
+      with:
+        host: ${{ secrets.CAFE24_SSH_HOST }}
+        username: ${{ secrets.CAFE24_SSH_USERNAME }}
+        key: ${{ secrets.CAFE24_SSH_KEY }}
+        script: |
+          cd /var/www/html/visachat
+          echo "📁 현재 디렉토리: $(pwd)"
+          
+          echo "📦 의존성 설치 중..."
+          npm install --production
+          
+          echo "🔄 PM2 프로세스 상태 확인:"
+          pm2 list
+          
+          # PM2 프로세스가 존재하면 재시작, 없으면 새로 시작
+          if pm2 describe visachat > /dev/null 2>&1; then
+            echo "🔄 visachat 서버 재시작 중..."
+            pm2 restart visachat
+          else
+            echo "🚀 visachat 서버 새로 시작..."
+            pm2 start index.js --name visachat
+          fi
+          
+          sleep 5
+          
+          echo "📊 최종 상태 확인:"
+          pm2 list
+          pm2 save
+          
+          echo "✅ visachat 서버 배포 완료!"
+        port: 22
+        timeout: 30s
+        command_timeout: 5m
