@@ -78,11 +78,38 @@ p {
     /* 모바일에서 더 넓게 */
     word-wrap: break-word;
     margin-bottom: 12px;
-    line-height: 1.5;
+    line-height: 1.6;
     position: relative;
     padding: 10px 16px;
     border-radius: 18px;
     flex-shrink: 0;
+}
+
+/* 마크다운 스타일링 */
+p strong {
+    font-weight: 600;
+    color: inherit;
+}
+
+p strong.heading {
+    display: block;
+    font-size: 1.05em;
+    margin-top: 8px;
+    margin-bottom: 4px;
+}
+
+p .list-number {
+    font-weight: 600;
+    color: #1a73e8;
+}
+
+p .list-bullet {
+    color: #1a73e8;
+    margin-right: 4px;
+}
+
+p em {
+    font-style: italic;
 }
 
 p:before,

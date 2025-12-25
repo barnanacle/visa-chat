@@ -23,6 +23,40 @@ window.onload = function () {
     }, 500);
 };
 
+/**
+ * 간단한 마크다운을 HTML로 변환
+ */
+function parseMarkdown(text) {
+    if (!text) return '';
+
+    // XSS 방지를 위한 HTML 이스케이프
+    let html = text
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;');
+
+    // 줄바꿈 처리
+    html = html.replace(/\n/g, '<br>');
+
+    // 굵은 글씨 (**text** 또는 __text__)
+    html = html.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+    html = html.replace(/__(.+?)__/g, '<strong>$1</strong>');
+
+    // 기울임 (*text* 또는 _text_) - 단, ** 내부는 제외
+    html = html.replace(/(?<!\*)\*(?!\*)(.+?)(?<!\*)\*(?!\*)/g, '<em>$1</em>');
+
+    // 번호 매기기 (1. 2. 3. 등) - 줄 시작에서
+    html = html.replace(/(^|\<br\>)(\d+)\.\s+/g, '$1<span class="list-number">$2.</span> ');
+
+    // 글머리 기호 (- 또는 •) - 줄 시작에서
+    html = html.replace(/(^|\<br\>)-\s+/g, '$1<span class="list-bullet">•</span> ');
+
+    // 제목 스타일 (### 또는 ##) - 간단한 강조로 변환
+    html = html.replace(/(^|\<br\>)#{1,3}\s+(.+?)(\<br\>|$)/g, '$1<strong class="heading">$2</strong>$3');
+
+    return html;
+}
+
 async function sendMessage() {
     const userInputElement = document.getElementById('user-input');
     const message = userInputElement.value.trim();
@@ -62,8 +96,8 @@ async function sendMessage() {
 
         const data = await response.json();
 
-        // 로딩 제거하고 응답 표시
-        loadingMessageElement.textContent = data.answer;
+        // 로딩 제거하고 응답 표시 (마크다운 파싱)
+        loadingMessageElement.innerHTML = parseMarkdown(data.answer);
         assistantMessages.push(data.answer);
         scrollToBottom();
 
@@ -78,7 +112,14 @@ function appendMessage(message, className) {
     const chatBox = document.getElementById('chat-box');
     const messageElement = document.createElement('p');
     messageElement.className = className;
-    messageElement.textContent = message;
+
+    // receive 클래스인 경우 마크다운 파싱 적용
+    if (className === 'receive' && message) {
+        messageElement.innerHTML = parseMarkdown(message);
+    } else {
+        messageElement.textContent = message;
+    }
+
     chatBox.appendChild(messageElement);
     return messageElement;
 }
