@@ -28,9 +28,9 @@ body {
 /* 채팅 컨테이너 - 전체 화면 채우기 */
 #chat-container {
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    /* 뷰포트 높이 고정 */
     max-width: none;
-    /* PC에서도 전체 너비 사용 */
     background: var(--page-background);
     overflow: hidden;
     display: flex;
@@ -70,10 +70,12 @@ body {
 
 /* 채팅 박스 - 남은 공간 채우기, 내부 스크롤 */
 #chat-box {
-    flex: 1;
+    flex: 1 1 0;
+    /* 남은 공간 채우기 */
+    min-height: 0;
+    /* flexbox 오버플로우 방지 핵심 */
     padding: 15px 20px;
     overflow-y: auto;
-    /* 내부 스크롤만 허용 */
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
