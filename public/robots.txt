@@ -1,0 +1,11 @@
+# VisaChat Robots.txt
+# https://visachat.bluedawn.kr
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://visachat.bluedawn.kr/sitemap.xml
+
+# 크롤링 딜레이 (서버 부하 방지)
+Crawl-delay: 1
