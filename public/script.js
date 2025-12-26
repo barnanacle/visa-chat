@@ -41,8 +41,9 @@ function parseMarkdown(text) {
     // 제목 스타일 (#### 또는 ### 또는 ##) - 줄바꿈 전에 처리
     html = html.replace(/^#{1,4}\s+(.+)$/gm, '<strong class="heading">$1</strong>');
 
-    // 글머리 기호 (- 로 시작하는 줄) - "-"를 "•"로 완전 교체, 줄바꿈 전에 처리
-    html = html.replace(/^-\s+/gm, '• ');
+    // 글머리 기호 - 줄 시작의 "-"를 "•"로 완전 교체 (줄바꿈 전에 처리)
+    // 연속된 대시(- -)도 하나의 bullet으로 처리
+    html = html.replace(/^[-•]\s*-?\s*/gm, '• ');
 
     // 줄바꿈 처리
     html = html.replace(/\n/g, '<br>');
