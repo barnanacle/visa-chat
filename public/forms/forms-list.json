@@ -1,7 +1,7 @@
 {
-  "version": "1.1",
-  "updatedAt": "2025-12-26T02:16:21.224Z",
-  "totalForms": 167,
+  "version": "1.2",
+  "updatedAt": "2025-12-26T03:17:27.126Z",
+  "totalForms": 193,
   "forms": [
     {
       "name": "K-POINT E-7-4 고용계약서 견본",
@@ -29,9 +29,29 @@
       "url": "/forms/%5B%EB%B3%84%EC%A7%80%20%EC%A0%9C10%ED%98%B8%EC%84%9C%EC%8B%9D%5D%20%EA%B5%AD%EC%A0%81%EC%83%81%EC%8B%A4%20%EC%8B%A0%EA%B3%A0%EC%84%9C(%EA%B5%AD%EC%A0%81%EB%B2%95%20%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99).hwp"
     },
     {
+      "name": "[별지 제10호서식] 특례(외국국적동포) 고용가능확인서(발급¸ 변경)신청서(외국인근로자의 고용 등에 관한 법률 시행규칙)",
+      "file": "[별지 제10호서식] 특례(외국국적동포) 고용가능확인서(발급¸ 변경)신청서(외국인근로자의 고용 등에 관한 법률 시행규칙).hwp",
+      "url": "/forms/%5B%EB%B3%84%EC%A7%80%20%EC%A0%9C10%ED%98%B8%EC%84%9C%EC%8B%9D%5D%20%ED%8A%B9%EB%A1%80(%EC%99%B8%EA%B5%AD%EA%B5%AD%EC%A0%81%EB%8F%99%ED%8F%AC)%20%EA%B3%A0%EC%9A%A9%EA%B0%80%EB%8A%A5%ED%99%95%EC%9D%B8%EC%84%9C(%EB%B0%9C%EA%B8%89%C2%B8%20%EB%B3%80%EA%B2%BD)%EC%8B%A0%EC%B2%AD%EC%84%9C(%EC%99%B8%EA%B5%AD%EC%9D%B8%EA%B7%BC%EB%A1%9C%EC%9E%90%EC%9D%98%20%EA%B3%A0%EC%9A%A9%20%EB%93%B1%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0%20%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99).hwp"
+    },
+    {
+      "name": "[별지 제10호의2서식] 특례(외국국적 동포)고용가능 (변경)확인서(외국인근로자의 고용 등에 관한 법률 시행규칙)",
+      "file": "[별지 제10호의2서식] 특례(외국국적 동포)고용가능 (변경)확인서(외국인근로자의 고용 등에 관한 법률 시행규칙).hwp",
+      "url": "/forms/%5B%EB%B3%84%EC%A7%80%20%EC%A0%9C10%ED%98%B8%EC%9D%982%EC%84%9C%EC%8B%9D%5D%20%ED%8A%B9%EB%A1%80(%EC%99%B8%EA%B5%AD%EA%B5%AD%EC%A0%81%20%EB%8F%99%ED%8F%AC)%EA%B3%A0%EC%9A%A9%EA%B0%80%EB%8A%A5%20(%EB%B3%80%EA%B2%BD)%ED%99%95%EC%9D%B8%EC%84%9C(%EC%99%B8%EA%B5%AD%EC%9D%B8%EA%B7%BC%EB%A1%9C%EC%9E%90%EC%9D%98%20%EA%B3%A0%EC%9A%A9%20%EB%93%B1%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0%20%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99).hwp"
+    },
+    {
       "name": "[별지 제11호서식] 국적 판정 신청서(국적법 시행규칙)",
       "file": "[별지 제11호서식] 국적 판정 신청서(국적법 시행규칙).hwp",
       "url": "/forms/%5B%EB%B3%84%EC%A7%80%20%EC%A0%9C11%ED%98%B8%EC%84%9C%EC%8B%9D%5D%20%EA%B5%AD%EC%A0%81%20%ED%8C%90%EC%A0%95%20%EC%8B%A0%EC%B2%AD%EC%84%9C(%EA%B5%AD%EC%A0%81%EB%B2%95%20%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99).hwp"
+    },
+    {
+      "name": "[별지 제11호서식] 특례고용외국인근로자(외국국적동포) 근로개시 신고서(외국인근로자의 고용 등에 관한 법률 시행규칙)",
+      "file": "[별지 제11호서식] 특례고용외국인근로자(외국국적동포) 근로개시 신고서(외국인근로자의 고용 등에 관한 법률 시행규칙).hwp",
+      "url": "/forms/%5B%EB%B3%84%EC%A7%80%20%EC%A0%9C11%ED%98%B8%EC%84%9C%EC%8B%9D%5D%20%ED%8A%B9%EB%A1%80%EA%B3%A0%EC%9A%A9%EC%99%B8%EA%B5%AD%EC%9D%B8%EA%B7%BC%EB%A1%9C%EC%9E%90(%EC%99%B8%EA%B5%AD%EA%B5%AD%EC%A0%81%EB%8F%99%ED%8F%AC)%20%EA%B7%BC%EB%A1%9C%EA%B0%9C%EC%8B%9C%20%EC%8B%A0%EA%B3%A0%EC%84%9C(%EC%99%B8%EA%B5%AD%EC%9D%B8%EA%B7%BC%EB%A1%9C%EC%9E%90%EC%9D%98%20%EA%B3%A0%EC%9A%A9%20%EB%93%B1%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0%20%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99).hwp"
+    },
+    {
+      "name": "[별지 제11호의2서식] [별지제10호의2서식]으로 이동 _2010.4.12_(외국인근로자의 고용 등에 관한 법률 시행규칙)",
+      "file": "[별지 제11호의2서식] [별지제10호의2서식]으로 이동 _2010.4.12_(외국인근로자의 고용 등에 관한 법률 시행규칙).hwp",
+      "url": "/forms/%5B%EB%B3%84%EC%A7%80%20%EC%A0%9C11%ED%98%B8%EC%9D%982%EC%84%9C%EC%8B%9D%5D%20%5B%EB%B3%84%EC%A7%80%EC%A0%9C10%ED%98%B8%EC%9D%982%EC%84%9C%EC%8B%9D%5D%EC%9C%BC%EB%A1%9C%20%EC%9D%B4%EB%8F%99%20_2010.4.12_(%EC%99%B8%EA%B5%AD%EC%9D%B8%EA%B7%BC%EB%A1%9C%EC%9E%90%EC%9D%98%20%EA%B3%A0%EC%9A%A9%20%EB%93%B1%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0%20%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99).hwp"
     },
     {
       "name": "[별지 제12호서식] 사실증명서 발급 신청서(국적법 시행규칙)",
@@ -39,14 +59,59 @@
       "url": "/forms/%5B%EB%B3%84%EC%A7%80%20%EC%A0%9C12%ED%98%B8%EC%84%9C%EC%8B%9D%5D%20%EC%82%AC%EC%8B%A4%EC%A6%9D%EB%AA%85%EC%84%9C%20%EB%B0%9C%EA%B8%89%20%EC%8B%A0%EC%B2%AD%EC%84%9C(%EA%B5%AD%EC%A0%81%EB%B2%95%20%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99).hwp"
     },
     {
+      "name": "[별지 제12호서식] 외국인근로자 고용변동 등 신고서(외국인근로자의 고용 등에 관한 법률 시행규칙)",
+      "file": "[별지 제12호서식] 외국인근로자 고용변동 등 신고서(외국인근로자의 고용 등에 관한 법률 시행규칙).hwp",
+      "url": "/forms/%5B%EB%B3%84%EC%A7%80%20%EC%A0%9C12%ED%98%B8%EC%84%9C%EC%8B%9D%5D%20%EC%99%B8%EA%B5%AD%EC%9D%B8%EA%B7%BC%EB%A1%9C%EC%9E%90%20%EA%B3%A0%EC%9A%A9%EB%B3%80%EB%8F%99%20%EB%93%B1%20%EC%8B%A0%EA%B3%A0%EC%84%9C(%EC%99%B8%EA%B5%AD%EC%9D%B8%EA%B7%BC%EB%A1%9C%EC%9E%90%EC%9D%98%20%EA%B3%A0%EC%9A%A9%20%EB%93%B1%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0%20%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99).hwp"
+    },
+    {
+      "name": "[별지 제12호의2서식] 외국인근로자 고용사업장 정보변동 신고서(사업장정보¸ 지사 간 이동¸ 고용 승계)(외국인근로자의 고용 등에 관한 법률 시행규칙)",
+      "file": "[별지 제12호의2서식] 외국인근로자 고용사업장 정보변동 신고서(사업장정보¸ 지사 간 이동¸ 고용 승계)(외국인근로자의 고용 등에 관한 법률 시행규칙).hwp",
+      "url": "/forms/%5B%EB%B3%84%EC%A7%80%20%EC%A0%9C12%ED%98%B8%EC%9D%982%EC%84%9C%EC%8B%9D%5D%20%EC%99%B8%EA%B5%AD%EC%9D%B8%EA%B7%BC%EB%A1%9C%EC%9E%90%20%EA%B3%A0%EC%9A%A9%EC%82%AC%EC%97%85%EC%9E%A5%20%EC%A0%95%EB%B3%B4%EB%B3%80%EB%8F%99%20%EC%8B%A0%EA%B3%A0%EC%84%9C(%EC%82%AC%EC%97%85%EC%9E%A5%EC%A0%95%EB%B3%B4%C2%B8%20%EC%A7%80%EC%82%AC%20%EA%B0%84%20%EC%9D%B4%EB%8F%99%C2%B8%20%EA%B3%A0%EC%9A%A9%20%EC%8A%B9%EA%B3%84)(%EC%99%B8%EA%B5%AD%EC%9D%B8%EA%B7%BC%EB%A1%9C%EC%9E%90%EC%9D%98%20%EA%B3%A0%EC%9A%A9%20%EB%93%B1%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0%20%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99).hwp"
+    },
+    {
+      "name": "[별지 제12호의3서식] 취업기간 만료자 취업활동 기간 연장신청서(외국인근로자의 고용 등에 관한 법률 시행규칙)",
+      "file": "[별지 제12호의3서식] 취업기간 만료자 취업활동 기간 연장신청서(외국인근로자의 고용 등에 관한 법률 시행규칙).hwp",
+      "url": "/forms/%5B%EB%B3%84%EC%A7%80%20%EC%A0%9C12%ED%98%B8%EC%9D%983%EC%84%9C%EC%8B%9D%5D%20%EC%B7%A8%EC%97%85%EA%B8%B0%EA%B0%84%20%EB%A7%8C%EB%A3%8C%EC%9E%90%20%EC%B7%A8%EC%97%85%ED%99%9C%EB%8F%99%20%EA%B8%B0%EA%B0%84%20%EC%97%B0%EC%9E%A5%EC%8B%A0%EC%B2%AD%EC%84%9C(%EC%99%B8%EA%B5%AD%EC%9D%B8%EA%B7%BC%EB%A1%9C%EC%9E%90%EC%9D%98%20%EA%B3%A0%EC%9A%A9%20%EB%93%B1%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0%20%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99).hwp"
+    },
+    {
+      "name": "[별지 제12호의4서식] 취업기간 만료자 취업활동 기간 연장확인서(Certificate of Extension of Work Period for an Employee Whose Work Authorization has Expired)(외국인근로자의 고용 등에 관한 법률 시행규",
+      "file": "[별지 제12호의4서식] 취업기간 만료자 취업활동 기간 연장확인서(Certificate of Extension of Work Period for an Employee Whose Work Authorization has Expired)(외국인근로자의 고용 등에 관한 법률 시행규.hwp",
+      "url": "/forms/%5B%EB%B3%84%EC%A7%80%20%EC%A0%9C12%ED%98%B8%EC%9D%984%EC%84%9C%EC%8B%9D%5D%20%EC%B7%A8%EC%97%85%EA%B8%B0%EA%B0%84%20%EB%A7%8C%EB%A3%8C%EC%9E%90%20%EC%B7%A8%EC%97%85%ED%99%9C%EB%8F%99%20%EA%B8%B0%EA%B0%84%20%EC%97%B0%EC%9E%A5%ED%99%95%EC%9D%B8%EC%84%9C(Certificate%20of%20Extension%20of%20Work%20Period%20for%20an%20Employee%20Whose%20Work%20Authorization%20has%20Expired)(%EC%99%B8%EA%B5%AD%EC%9D%B8%EA%B7%BC%EB%A1%9C%EC%9E%90%EC%9D%98%20%EA%B3%A0%EC%9A%A9%20%EB%93%B1%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0%20%EC%8B%9C%ED%96%89%EA%B7%9C.hwp"
+    },
+    {
+      "name": "[별지 제12호의5서식] 재고용 만료자 재입국 고용허가 신청서(외국인근로자의 고용 등에 관한 법률 시행규칙)",
+      "file": "[별지 제12호의5서식] 재고용 만료자 재입국 고용허가 신청서(외국인근로자의 고용 등에 관한 법률 시행규칙).hwp",
+      "url": "/forms/%5B%EB%B3%84%EC%A7%80%20%EC%A0%9C12%ED%98%B8%EC%9D%985%EC%84%9C%EC%8B%9D%5D%20%EC%9E%AC%EA%B3%A0%EC%9A%A9%20%EB%A7%8C%EB%A3%8C%EC%9E%90%20%EC%9E%AC%EC%9E%85%EA%B5%AD%20%EA%B3%A0%EC%9A%A9%ED%97%88%EA%B0%80%20%EC%8B%A0%EC%B2%AD%EC%84%9C(%EC%99%B8%EA%B5%AD%EC%9D%B8%EA%B7%BC%EB%A1%9C%EC%9E%90%EC%9D%98%20%EA%B3%A0%EC%9A%A9%20%EB%93%B1%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0%20%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99).hwp"
+    },
+    {
       "name": "[별지 제13호서식] 국적취득 사실증명서(국적법 시행규칙)",
       "file": "[별지 제13호서식] 국적취득 사실증명서(국적법 시행규칙).hwp",
       "url": "/forms/%5B%EB%B3%84%EC%A7%80%20%EC%A0%9C13%ED%98%B8%EC%84%9C%EC%8B%9D%5D%20%EA%B5%AD%EC%A0%81%EC%B7%A8%EB%93%9D%20%EC%82%AC%EC%8B%A4%EC%A6%9D%EB%AA%85%EC%84%9C(%EA%B5%AD%EC%A0%81%EB%B2%95%20%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99).hwp"
     },
     {
+      "name": "[별지 제13호서식] 사업장 변경신청서(약호_ A522A)(외국인근로자의 고용 등에 관한 법률 시행규칙)",
+      "file": "[별지 제13호서식] 사업장 변경신청서(약호_ A522A)(외국인근로자의 고용 등에 관한 법률 시행규칙).hwp",
+      "url": "/forms/%5B%EB%B3%84%EC%A7%80%20%EC%A0%9C13%ED%98%B8%EC%84%9C%EC%8B%9D%5D%20%EC%82%AC%EC%97%85%EC%9E%A5%20%EB%B3%80%EA%B2%BD%EC%8B%A0%EC%B2%AD%EC%84%9C(%EC%95%BD%ED%98%B8_%20A522A)(%EC%99%B8%EA%B5%AD%EC%9D%B8%EA%B7%BC%EB%A1%9C%EC%9E%90%EC%9D%98%20%EA%B3%A0%EC%9A%A9%20%EB%93%B1%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0%20%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99).hwp"
+    },
+    {
+      "name": "[별지 제13호의2서식] Application for Change of Workplace(약호_ A522B)(외국인근로자의 고용 등에 관한 법률 시행규칙)",
+      "file": "[별지 제13호의2서식] Application for Change of Workplace(약호_ A522B)(외국인근로자의 고용 등에 관한 법률 시행규칙).hwp",
+      "url": "/forms/%5B%EB%B3%84%EC%A7%80%20%EC%A0%9C13%ED%98%B8%EC%9D%982%EC%84%9C%EC%8B%9D%5D%20Application%20for%20Change%20of%20Workplace(%EC%95%BD%ED%98%B8_%20A522B)(%EC%99%B8%EA%B5%AD%EC%9D%B8%EA%B7%BC%EB%A1%9C%EC%9E%90%EC%9D%98%20%EA%B3%A0%EC%9A%A9%20%EB%93%B1%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0%20%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99).hwp"
+    },
+    {
+      "name": "[별지 제13호의3서식] 사업장 변경 신청기간 연장신청서(외국인근로자의 고용 등에 관한 법률 시행규칙)",
+      "file": "[별지 제13호의3서식] 사업장 변경 신청기간 연장신청서(외국인근로자의 고용 등에 관한 법률 시행규칙).hwp",
+      "url": "/forms/%5B%EB%B3%84%EC%A7%80%20%EC%A0%9C13%ED%98%B8%EC%9D%983%EC%84%9C%EC%8B%9D%5D%20%EC%82%AC%EC%97%85%EC%9E%A5%20%EB%B3%80%EA%B2%BD%20%EC%8B%A0%EC%B2%AD%EA%B8%B0%EA%B0%84%20%EC%97%B0%EC%9E%A5%EC%8B%A0%EC%B2%AD%EC%84%9C(%EC%99%B8%EA%B5%AD%EC%9D%B8%EA%B7%BC%EB%A1%9C%EC%9E%90%EC%9D%98%20%EA%B3%A0%EC%9A%A9%20%EB%93%B1%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0%20%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99).hwp"
+    },
+    {
       "name": "[별지 제14호서식] (국적상실¸ 국적선택¸ 국적보유신고¸ 국적이탈) 사실증명서(국적법 시행규칙)",
       "file": "[별지 제14호서식] (국적상실¸ 국적선택¸ 국적보유신고¸ 국적이탈) 사실증명서(국적법 시행규칙).hwp",
       "url": "/forms/%5B%EB%B3%84%EC%A7%80%20%EC%A0%9C14%ED%98%B8%EC%84%9C%EC%8B%9D%5D%20(%EA%B5%AD%EC%A0%81%EC%83%81%EC%8B%A4%C2%B8%20%EA%B5%AD%EC%A0%81%EC%84%A0%ED%83%9D%C2%B8%20%EA%B5%AD%EC%A0%81%EB%B3%B4%EC%9C%A0%EC%8B%A0%EA%B3%A0%C2%B8%20%EA%B5%AD%EC%A0%81%EC%9D%B4%ED%83%88)%20%EC%82%AC%EC%8B%A4%EC%A6%9D%EB%AA%85%EC%84%9C(%EA%B5%AD%EC%A0%81%EB%B2%95%20%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99).hwp"
+    },
+    {
+      "name": "[별지 제14호서식] 지도ㆍ점검 등 기록부(외국인근로자의 고용 등에 관한 법률 시행규칙)",
+      "file": "[별지 제14호서식] 지도ㆍ점검 등 기록부(외국인근로자의 고용 등에 관한 법률 시행규칙).hwp",
+      "url": "/forms/%5B%EB%B3%84%EC%A7%80%20%EC%A0%9C14%ED%98%B8%EC%84%9C%EC%8B%9D%5D%20%EC%A7%80%EB%8F%84%E3%86%8D%EC%A0%90%EA%B2%80%20%EB%93%B1%20%EA%B8%B0%EB%A1%9D%EB%B6%80(%EC%99%B8%EA%B5%AD%EC%9D%B8%EA%B7%BC%EB%A1%9C%EC%9E%90%EC%9D%98%20%EA%B3%A0%EC%9A%A9%20%EB%93%B1%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0%20%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99).hwp"
     },
     {
       "name": "[별지 제1호서식] 국적취득 신고서(국적법 시행규칙)",
@@ -69,9 +134,29 @@
       "url": "/forms/%5B%EB%B3%84%EC%A7%80%20%EC%A0%9C3%ED%98%B8%EC%84%9C%EC%8B%9D%5D%20%EA%B5%AD%EC%A0%81%ED%9A%8C%EB%B3%B5%ED%97%88%EA%B0%80%20%EC%8B%A0%EC%B2%AD%EC%84%9C(%EA%B5%AD%EC%A0%81%EB%B2%95%20%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99).hwp"
     },
     {
+      "name": "[별지 제4호서식] 외국인근로자 고용허가서 (발급¸ 재발급)신청서(외국인근로자의 고용 등에 관한 법률 시행규칙)",
+      "file": "[별지 제4호서식] 외국인근로자 고용허가서 (발급¸ 재발급)신청서(외국인근로자의 고용 등에 관한 법률 시행규칙).hwp",
+      "url": "/forms/%5B%EB%B3%84%EC%A7%80%20%EC%A0%9C4%ED%98%B8%EC%84%9C%EC%8B%9D%5D%20%EC%99%B8%EA%B5%AD%EC%9D%B8%EA%B7%BC%EB%A1%9C%EC%9E%90%20%EA%B3%A0%EC%9A%A9%ED%97%88%EA%B0%80%EC%84%9C%20(%EB%B0%9C%EA%B8%89%C2%B8%20%EC%9E%AC%EB%B0%9C%EA%B8%89)%EC%8B%A0%EC%B2%AD%EC%84%9C(%EC%99%B8%EA%B5%AD%EC%9D%B8%EA%B7%BC%EB%A1%9C%EC%9E%90%EC%9D%98%20%EA%B3%A0%EC%9A%A9%20%EB%93%B1%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0%20%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99).hwp"
+    },
+    {
+      "name": "[별지 제4호의2서식] 농어업인안전보험 가입 확약서(외국인근로자의 고용 등에 관한 법률 시행규칙)",
+      "file": "[별지 제4호의2서식] 농어업인안전보험 가입 확약서(외국인근로자의 고용 등에 관한 법률 시행규칙).hwp",
+      "url": "/forms/%5B%EB%B3%84%EC%A7%80%20%EC%A0%9C4%ED%98%B8%EC%9D%982%EC%84%9C%EC%8B%9D%5D%20%EB%86%8D%EC%96%B4%EC%97%85%EC%9D%B8%EC%95%88%EC%A0%84%EB%B3%B4%ED%97%98%20%EA%B0%80%EC%9E%85%20%ED%99%95%EC%95%BD%EC%84%9C(%EC%99%B8%EA%B5%AD%EC%9D%B8%EA%B7%BC%EB%A1%9C%EC%9E%90%EC%9D%98%20%EA%B3%A0%EC%9A%A9%20%EB%93%B1%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0%20%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99).hwp"
+    },
+    {
       "name": "[별지 제5호서식] 외국국적 포기확인서(국적법 시행규칙)",
       "file": "[별지 제5호서식] 외국국적 포기확인서(국적법 시행규칙).hwp",
       "url": "/forms/%5B%EB%B3%84%EC%A7%80%20%EC%A0%9C5%ED%98%B8%EC%84%9C%EC%8B%9D%5D%20%EC%99%B8%EA%B5%AD%EA%B5%AD%EC%A0%81%20%ED%8F%AC%EA%B8%B0%ED%99%95%EC%9D%B8%EC%84%9C(%EA%B5%AD%EC%A0%81%EB%B2%95%20%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99).hwp"
+    },
+    {
+      "name": "[별지 제5호서식] 외국인근로자 고용허가서(외국인근로자의 고용 등에 관한 법률 시행규칙)",
+      "file": "[별지 제5호서식] 외국인근로자 고용허가서(외국인근로자의 고용 등에 관한 법률 시행규칙).hwp",
+      "url": "/forms/%5B%EB%B3%84%EC%A7%80%20%EC%A0%9C5%ED%98%B8%EC%84%9C%EC%8B%9D%5D%20%EC%99%B8%EA%B5%AD%EC%9D%B8%EA%B7%BC%EB%A1%9C%EC%9E%90%20%EA%B3%A0%EC%9A%A9%ED%97%88%EA%B0%80%EC%84%9C(%EC%99%B8%EA%B5%AD%EC%9D%B8%EA%B7%BC%EB%A1%9C%EC%9E%90%EC%9D%98%20%EA%B3%A0%EC%9A%A9%20%EB%93%B1%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0%20%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99).hwp"
+    },
+    {
+      "name": "[별지 제5호의2서식] 내국인 구인노력 증명서(외국인근로자의 고용 등에 관한 법률 시행규칙)",
+      "file": "[별지 제5호의2서식] 내국인 구인노력 증명서(외국인근로자의 고용 등에 관한 법률 시행규칙).hwp",
+      "url": "/forms/%5B%EB%B3%84%EC%A7%80%20%EC%A0%9C5%ED%98%B8%EC%9D%982%EC%84%9C%EC%8B%9D%5D%20%EB%82%B4%EA%B5%AD%EC%9D%B8%20%EA%B5%AC%EC%9D%B8%EB%85%B8%EB%A0%A5%20%EC%A6%9D%EB%AA%85%EC%84%9C(%EC%99%B8%EA%B5%AD%EC%9D%B8%EA%B7%BC%EB%A1%9C%EC%9E%90%EC%9D%98%20%EA%B3%A0%EC%9A%A9%20%EB%93%B1%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0%20%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99).hwp"
     },
     {
       "name": "[별지 제5호의2서식] 외국국적불행사 서약서(국적법 시행규칙)",
@@ -84,9 +169,24 @@
       "url": "/forms/%5B%EB%B3%84%EC%A7%80%20%EC%A0%9C5%ED%98%B8%EC%9D%983%EC%84%9C%EC%8B%9D%5D%20%EC%99%B8%EA%B5%AD%EA%B5%AD%EC%A0%81%EB%B6%88%ED%96%89%EC%82%AC%20%EC%84%9C%EC%95%BD%ED%99%95%EC%9D%B8%EC%84%9C(%EA%B5%AD%EC%A0%81%EB%B2%95%20%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99).hwp"
     },
     {
+      "name": "[별지 제6호서식] 표준근로계약서(Standard Labor Contract)(외국인근로자의 고용 등에 관한 법률 시행규칙)",
+      "file": "[별지 제6호서식] 표준근로계약서(Standard Labor Contract)(외국인근로자의 고용 등에 관한 법률 시행규칙).hwp",
+      "url": "/forms/%5B%EB%B3%84%EC%A7%80%20%EC%A0%9C6%ED%98%B8%EC%84%9C%EC%8B%9D%5D%20%ED%91%9C%EC%A4%80%EA%B7%BC%EB%A1%9C%EA%B3%84%EC%95%BD%EC%84%9C(Standard%20Labor%20Contract)(%EC%99%B8%EA%B5%AD%EC%9D%B8%EA%B7%BC%EB%A1%9C%EC%9E%90%EC%9D%98%20%EA%B3%A0%EC%9A%A9%20%EB%93%B1%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0%20%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99).hwp"
+    },
+    {
+      "name": "[별지 제6호의2서식] 표준근로계약서(농업ㆍ축산업ㆍ어업 분야)(Standard Labor Contract(For Agriculture¸ Livestock and Fishery Sectors))(외국인근로자의 고용 등에 관한 법률 시행규칙)",
+      "file": "[별지 제6호의2서식] 표준근로계약서(농업ㆍ축산업ㆍ어업 분야)(Standard Labor Contract(For Agriculture¸ Livestock and Fishery Sectors))(외국인근로자의 고용 등에 관한 법률 시행규칙).hwp",
+      "url": "/forms/%5B%EB%B3%84%EC%A7%80%20%EC%A0%9C6%ED%98%B8%EC%9D%982%EC%84%9C%EC%8B%9D%5D%20%ED%91%9C%EC%A4%80%EA%B7%BC%EB%A1%9C%EA%B3%84%EC%95%BD%EC%84%9C(%EB%86%8D%EC%97%85%E3%86%8D%EC%B6%95%EC%82%B0%EC%97%85%E3%86%8D%EC%96%B4%EC%97%85%20%EB%B6%84%EC%95%BC)(Standard%20Labor%20Contract(For%20Agriculture%C2%B8%20Livestock%20and%20Fishery%20Sectors))(%EC%99%B8%EA%B5%AD%EC%9D%B8%EA%B7%BC%EB%A1%9C%EC%9E%90%EC%9D%98%20%EA%B3%A0%EC%9A%A9%20%EB%93%B1%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0%20%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99).hwp"
+    },
+    {
       "name": "[별지 제7호서식] 국적선택 신고서(국적법 시행규칙)",
       "file": "[별지 제7호서식] 국적선택 신고서(국적법 시행규칙).hwp",
       "url": "/forms/%5B%EB%B3%84%EC%A7%80%20%EC%A0%9C7%ED%98%B8%EC%84%9C%EC%8B%9D%5D%20%EA%B5%AD%EC%A0%81%EC%84%A0%ED%83%9D%20%EC%8B%A0%EA%B3%A0%EC%84%9C(%EA%B5%AD%EC%A0%81%EB%B2%95%20%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99).hwp"
+    },
+    {
+      "name": "[별지 제7호서식] 외국인근로자 고용허가기간 연장신청서(외국인근로자의 고용 등에 관한 법률 시행규칙)",
+      "file": "[별지 제7호서식] 외국인근로자 고용허가기간 연장신청서(외국인근로자의 고용 등에 관한 법률 시행규칙).hwp",
+      "url": "/forms/%5B%EB%B3%84%EC%A7%80%20%EC%A0%9C7%ED%98%B8%EC%84%9C%EC%8B%9D%5D%20%EC%99%B8%EA%B5%AD%EC%9D%B8%EA%B7%BC%EB%A1%9C%EC%9E%90%20%EA%B3%A0%EC%9A%A9%ED%97%88%EA%B0%80%EA%B8%B0%EA%B0%84%20%EC%97%B0%EC%9E%A5%EC%8B%A0%EC%B2%AD%EC%84%9C(%EC%99%B8%EA%B5%AD%EC%9D%B8%EA%B7%BC%EB%A1%9C%EC%9E%90%EC%9D%98%20%EA%B3%A0%EC%9A%A9%20%EB%93%B1%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0%20%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99).hwp"
     },
     {
       "name": "[별지 제8호서식] 국적이탈 신고서(국적법 시행규칙)",
@@ -94,14 +194,34 @@
       "url": "/forms/%5B%EB%B3%84%EC%A7%80%20%EC%A0%9C8%ED%98%B8%EC%84%9C%EC%8B%9D%5D%20%EA%B5%AD%EC%A0%81%EC%9D%B4%ED%83%88%20%EC%8B%A0%EA%B3%A0%EC%84%9C(%EA%B5%AD%EC%A0%81%EB%B2%95%20%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99).hwp"
     },
     {
+      "name": "[별지 제8호서식] 외국인 취업교육 수료증Certificate of Foreigner's Employment Training(외국인근로자의 고용 등에 관한 법률 시행규칙)",
+      "file": "[별지 제8호서식] 외국인 취업교육 수료증Certificate of Foreigner's Employment Training(외국인근로자의 고용 등에 관한 법률 시행규칙).hwp",
+      "url": "/forms/%5B%EB%B3%84%EC%A7%80%20%EC%A0%9C8%ED%98%B8%EC%84%9C%EC%8B%9D%5D%20%EC%99%B8%EA%B5%AD%EC%9D%B8%20%EC%B7%A8%EC%97%85%EA%B5%90%EC%9C%A1%20%EC%88%98%EB%A3%8C%EC%A6%9DCertificate%20of%20Foreigner's%20Employment%20Training(%EC%99%B8%EA%B5%AD%EC%9D%B8%EA%B7%BC%EB%A1%9C%EC%9E%90%EC%9D%98%20%EA%B3%A0%EC%9A%A9%20%EB%93%B1%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0%20%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99).hwp"
+    },
+    {
       "name": "[별지 제8호의2서식] 국적이탈 허가신청서(국적법 시행규칙)",
       "file": "[별지 제8호의2서식] 국적이탈 허가신청서(국적법 시행규칙).hwp",
       "url": "/forms/%5B%EB%B3%84%EC%A7%80%20%EC%A0%9C8%ED%98%B8%EC%9D%982%EC%84%9C%EC%8B%9D%5D%20%EA%B5%AD%EC%A0%81%EC%9D%B4%ED%83%88%20%ED%97%88%EA%B0%80%EC%8B%A0%EC%B2%AD%EC%84%9C(%EA%B5%AD%EC%A0%81%EB%B2%95%20%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99).hwp"
     },
     {
+      "name": "[별지 제8호의2서식] 외국인 취업교육기관 지정 신청서(외국인근로자의 고용 등에 관한 법률 시행규칙)",
+      "file": "[별지 제8호의2서식] 외국인 취업교육기관 지정 신청서(외국인근로자의 고용 등에 관한 법률 시행규칙).hwp",
+      "url": "/forms/%5B%EB%B3%84%EC%A7%80%20%EC%A0%9C8%ED%98%B8%EC%9D%982%EC%84%9C%EC%8B%9D%5D%20%EC%99%B8%EA%B5%AD%EC%9D%B8%20%EC%B7%A8%EC%97%85%EA%B5%90%EC%9C%A1%EA%B8%B0%EA%B4%80%20%EC%A7%80%EC%A0%95%20%EC%8B%A0%EC%B2%AD%EC%84%9C(%EC%99%B8%EA%B5%AD%EC%9D%B8%EA%B7%BC%EB%A1%9C%EC%9E%90%EC%9D%98%20%EA%B3%A0%EC%9A%A9%20%EB%93%B1%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0%20%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99).hwp"
+    },
+    {
       "name": "[별지 제8호의3서식] 국적선택명령서(국적법 시행규칙)",
       "file": "[별지 제8호의3서식] 국적선택명령서(국적법 시행규칙).hwp",
       "url": "/forms/%5B%EB%B3%84%EC%A7%80%20%EC%A0%9C8%ED%98%B8%EC%9D%983%EC%84%9C%EC%8B%9D%5D%20%EA%B5%AD%EC%A0%81%EC%84%A0%ED%83%9D%EB%AA%85%EB%A0%B9%EC%84%9C(%EA%B5%AD%EC%A0%81%EB%B2%95%20%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99).hwp"
+    },
+    {
+      "name": "[별지 제8호의3서식] 인력 현황(외국인근로자의 고용 등에 관한 법률 시행규칙)",
+      "file": "[별지 제8호의3서식] 인력 현황(외국인근로자의 고용 등에 관한 법률 시행규칙).hwp",
+      "url": "/forms/%5B%EB%B3%84%EC%A7%80%20%EC%A0%9C8%ED%98%B8%EC%9D%983%EC%84%9C%EC%8B%9D%5D%20%EC%9D%B8%EB%A0%A5%20%ED%98%84%ED%99%A9(%EC%99%B8%EA%B5%AD%EC%9D%B8%EA%B7%BC%EB%A1%9C%EC%9E%90%EC%9D%98%20%EA%B3%A0%EC%9A%A9%20%EB%93%B1%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0%20%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99).hwp"
+    },
+    {
+      "name": "[별지 제8호의4서식] 교육장 시설ㆍ장비 현황(외국인근로자의 고용 등에 관한 법률 시행규칙)",
+      "file": "[별지 제8호의4서식] 교육장 시설ㆍ장비 현황(외국인근로자의 고용 등에 관한 법률 시행규칙).hwp",
+      "url": "/forms/%5B%EB%B3%84%EC%A7%80%20%EC%A0%9C8%ED%98%B8%EC%9D%984%EC%84%9C%EC%8B%9D%5D%20%EA%B5%90%EC%9C%A1%EC%9E%A5%20%EC%8B%9C%EC%84%A4%E3%86%8D%EC%9E%A5%EB%B9%84%20%ED%98%84%ED%99%A9(%EC%99%B8%EA%B5%AD%EC%9D%B8%EA%B7%BC%EB%A1%9C%EC%9E%90%EC%9D%98%20%EA%B3%A0%EC%9A%A9%20%EB%93%B1%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0%20%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99).hwp"
     },
     {
       "name": "[별지 제8호의4서식] 복수국적자 발견 통보서(국적법 시행규칙)",
@@ -114,9 +234,19 @@
       "url": "/forms/%5B%EB%B3%84%EC%A7%80%20%EC%A0%9C8%ED%98%B8%EC%9D%985%EC%84%9C%EC%8B%9D%5D%20%EB%B3%B5%EC%88%98%EA%B5%AD%EC%A0%81%EC%9E%90%20%EA%B8%B0%EB%A1%9D%ED%91%9C(%EA%B5%AD%EC%A0%81%EB%B2%95%20%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99).hwp"
     },
     {
+      "name": "[별지 제8호의5서식] 외국인 취업교육기관 지정서(외국인근로자의 고용 등에 관한 법률 시행규칙)",
+      "file": "[별지 제8호의5서식] 외국인 취업교육기관 지정서(외국인근로자의 고용 등에 관한 법률 시행규칙).hwp",
+      "url": "/forms/%5B%EB%B3%84%EC%A7%80%20%EC%A0%9C8%ED%98%B8%EC%9D%985%EC%84%9C%EC%8B%9D%5D%20%EC%99%B8%EA%B5%AD%EC%9D%B8%20%EC%B7%A8%EC%97%85%EA%B5%90%EC%9C%A1%EA%B8%B0%EA%B4%80%20%EC%A7%80%EC%A0%95%EC%84%9C(%EC%99%B8%EA%B5%AD%EC%9D%B8%EA%B7%BC%EB%A1%9C%EC%9E%90%EC%9D%98%20%EA%B3%A0%EC%9A%A9%20%EB%93%B1%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0%20%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99).hwp"
+    },
+    {
       "name": "[별지 제9호서식] 국적보유 신고서(국적법 시행규칙)",
       "file": "[별지 제9호서식] 국적보유 신고서(국적법 시행규칙).hwp",
       "url": "/forms/%5B%EB%B3%84%EC%A7%80%20%EC%A0%9C9%ED%98%B8%EC%84%9C%EC%8B%9D%5D%20%EA%B5%AD%EC%A0%81%EB%B3%B4%EC%9C%A0%20%EC%8B%A0%EA%B3%A0%EC%84%9C(%EA%B5%AD%EC%A0%81%EB%B2%95%20%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99).hwp"
+    },
+    {
+      "name": "[별지 제9호서식] 특례외국인근로자(외국국적 동포) 구직신청서(외국인근로자의 고용 등에 관한 법률 시행규칙)",
+      "file": "[별지 제9호서식] 특례외국인근로자(외국국적 동포) 구직신청서(외국인근로자의 고용 등에 관한 법률 시행규칙).hwp",
+      "url": "/forms/%5B%EB%B3%84%EC%A7%80%20%EC%A0%9C9%ED%98%B8%EC%84%9C%EC%8B%9D%5D%20%ED%8A%B9%EB%A1%80%EC%99%B8%EA%B5%AD%EC%9D%B8%EA%B7%BC%EB%A1%9C%EC%9E%90(%EC%99%B8%EA%B5%AD%EA%B5%AD%EC%A0%81%20%EB%8F%99%ED%8F%AC)%20%EA%B5%AC%EC%A7%81%EC%8B%A0%EC%B2%AD%EC%84%9C(%EC%99%B8%EA%B5%AD%EC%9D%B8%EA%B7%BC%EB%A1%9C%EC%9E%90%EC%9D%98%20%EA%B3%A0%EC%9A%A9%20%EB%93%B1%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0%20%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99).hwp"
     },
     {
       "name": "가족관계통보서",
