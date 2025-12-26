@@ -35,8 +35,8 @@ function parseMarkdown(text) {
         .replace(/</g, '&lt;')
         .replace(/>/g, '&gt;');
 
-    // 링크 처리 [텍스트](URL)
-    html = html.replace(/\[([^\]]+)\]\((https?:\/\/[^\s\)]+)\)/g, '<a href="$2" target="_blank" class="form-link">$1</a>');
+    // 링크 처리 [텍스트](URL) - URL 내 공백 허용 (한글 파일명에 공백 있음)
+    html = html.replace(/\[([^\]]+)\]\((https?:\/\/[^\)]+)\)/g, '<a href="$2" target="_blank" class="form-link">$1</a>');
 
     // 제목 스타일 (#### 또는 ### 또는 ##) - 줄바꿈 전에 처리
     html = html.replace(/^#{1,4}\s+(.+)$/gm, '<strong class="heading">$1</strong>');
