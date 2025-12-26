@@ -35,9 +35,14 @@ function parseMarkdown(text) {
         .replace(/</g, '&lt;')
         .replace(/>/g, '&gt;');
 
-    // 링크 처리 [텍스트](URL) - HTML 이스케이프 전에 처리해야 함
-    // URL에서 이스케이프된 문자 복원
+    // 링크 처리 [텍스트](URL)
     html = html.replace(/\[([^\]]+)\]\((https?:\/\/[^\s\)]+)\)/g, '<a href="$2" target="_blank" class="form-link">$1</a>');
+
+    // 제목 스타일 (#### 또는 ### 또는 ##) - 줄바꿈 전에 처리
+    html = html.replace(/^#{1,4}\s+(.+)$/gm, '<strong class="heading">$1</strong>');
+
+    // 글머리 기호 (- 로 시작하는 줄) - "-"를 "•"로 완전 교체, 줄바꿈 전에 처리
+    html = html.replace(/^-\s+/gm, '• ');
 
     // 줄바꿈 처리
     html = html.replace(/\n/g, '<br>');
@@ -50,13 +55,7 @@ function parseMarkdown(text) {
     html = html.replace(/(?<!\*)\*(?!\*)(.+?)(?<!\*)\*(?!\*)/g, '<em>$1</em>');
 
     // 번호 매기기 (1. 2. 3. 등) - 줄 시작에서
-    html = html.replace(/(^|\<br\>)(\d+)\.\s+/g, '$1<span class="list-number">$2.</span> ');
-
-    // 글머리 기호 (- 로 시작하는 줄) - "-"를 "•"로 완전 교체
-    html = html.replace(/(^|<br>)-\s*/g, '$1<span class="list-bullet">•</span> ');
-
-    // 제목 스타일 (### 또는 ##) - 간단한 강조로 변환
-    html = html.replace(/(^|\<br\>)#{1,3}\s+(.+?)(\<br\>|$)/g, '$1<strong class="heading">$2</strong>$3');
+    html = html.replace(/(^|<br>)(\d+)\.\s+/g, '$1<span class="list-number">$2.</span> ');
 
     return html;
 }
