@@ -81,12 +81,13 @@ body {
     flex-direction: column;
 }
 
-/* 하단 광고 배너 */
+/* 하단 광고 배너 - 고정 크기 */
 #ad-banner {
     flex-shrink: 0;
     width: 100%;
-    min-height: 50px;
-    max-height: 90px;
+    height: 90px !important;
+    min-height: 90px !important;
+    max-height: 90px !important;
     background: #f5f5f5;
     border-top: 1px solid #eee;
     overflow: hidden;
